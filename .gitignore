@@ -1,0 +1,19 @@
+# 密钥等本地配置
+.env
+.env.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 前端
+node_modules/
+.next/
+*.tsbuildinfo
+
+# 系统和编辑器文件
+.DS_Store
+
+# 评测数据和脚本不上传
+agent/eval/

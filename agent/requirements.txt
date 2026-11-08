@@ -1,0 +1,16 @@
+# 核心依赖
+weaviate-client>=4.4.0
+ollama>=0.1.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# LangChain 核心（1.0 / community 0.4 移除了 ChatOllama，需限制版本）
+langchain>=0.3,<1
+langchain-community>=0.3,<0.4
+langchain-core>=0.3,<1
+
+# HTTP 服务
+fastapi>=0.104.0,<0.116
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+httpx>=0.25.0

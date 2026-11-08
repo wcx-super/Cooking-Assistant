@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Arial'),
+      local('Arial'),
+      url(/fonts/Arial.ttf) format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    src:
+      local('Arial'),
+      local('Arial'),
+      url(/fonts/Arial.ttf) format('opentype');
+    font-display: swap;
+  }
+  html {
+    touch-action: pan-y;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'PingFang SC',
+      'Microsoft YaHei',
+      'Noto Sans SC',
+      'Helvetica Neue',
+      Arial,
+      sans-serif,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      'Noto Color Emoji';
+  }
+  /* 标题统一用霞鹜文楷；该字体只有常规字重，关闭伪粗体避免笔画发糊 */
+  h1,
+  h2,
+  h3 {
+    font-family: theme('fontFamily.display');
+    font-synthesis: none;
+  }
+}
